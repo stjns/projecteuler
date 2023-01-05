@@ -1,0 +1,15 @@
+/Users/stephen/RiderProjects/palindrome/palindrome/bin/Debug/net7.0/palindrome
+/Users/stephen/RiderProjects/palindrome/palindrome/bin/Debug/net7.0/palindrome.deps.json
+/Users/stephen/RiderProjects/palindrome/palindrome/bin/Debug/net7.0/palindrome.runtimeconfig.json
+/Users/stephen/RiderProjects/palindrome/palindrome/bin/Debug/net7.0/palindrome.dll
+/Users/stephen/RiderProjects/palindrome/palindrome/bin/Debug/net7.0/palindrome.pdb
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.csproj.AssemblyReference.cache
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.GeneratedMSBuildEditorConfig.editorconfig
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.AssemblyInfoInputs.cache
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.AssemblyInfo.cs
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.csproj.CoreCompileInputs.cache
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.dll
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/refint/palindrome.dll
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.pdb
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/palindrome.genruntimeconfig.cache
+/Users/stephen/RiderProjects/palindrome/palindrome/obj/Debug/net7.0/ref/palindrome.dll
