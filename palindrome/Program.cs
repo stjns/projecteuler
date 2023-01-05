@@ -1,26 +1,31 @@
-﻿Console.WriteLine("How many digits?");
+﻿var timer = new System.Diagnostics.Stopwatch();
+
+static bool IsPalindrome (long number)
+{
+    long original = number;
+    long reverse = 0;
+
+    while (original != 0)
+    {
+        reverse = reverse * 10 + original % 10;
+        original /= 10;
+    }
+
+    return number == reverse;
+}
+
+Console.WriteLine("How many digits?");
 var numDigits = Console.ReadLine();
 
 var success = int.TryParse(numDigits, out var nd);
 
-if (success && nd < 15)
+if (!success || nd > 15)
 {
-    var timer = new System.Diagnostics.Stopwatch();
+    Console.WriteLine("Please enter an integer less than 15");
+}
+else
+{
     timer.Start();
-
-    static bool IsPalindrome (long number)
-    {
-        long original = number;
-        long reverse = 0;
-
-        while (original != 0)
-        {
-            reverse = reverse * 10 + original % 10;
-            original /= 10;
-        }
-
-        return number == reverse;
-    }
     
     long start = (long)Math.Pow(10, (nd)) - 1;
     long stop = start / 10;
@@ -28,11 +33,11 @@ if (success && nd < 15)
     long factor1 = 0; 
     long factor2 = 0; 
         
-    for (long i = start; i > stop; i--)
+    for (long f1 = start; f1 > stop && f1 > factor2; f1--)
     {
-        for (long x = i; x > stop; x--)
+        for (long f2 = f1; f2 > stop; f2--)
         {
-            long prod = x * i;
+            long prod = f2 * f1;
         
             if (prod < largest)
                 break;
@@ -40,15 +45,12 @@ if (success && nd < 15)
             if (IsPalindrome(prod) && prod > largest)
             {
                 largest = prod;
-                factor1 = i;
-                factor2 = x;
+                factor1 = f1;
+                factor2 = f2;
             
                 break;
             }
         }
-    
-        if (i <= factor2)
-            break;
     }
 
     timer.Stop();
@@ -58,5 +60,3 @@ if (success && nd < 15)
     Console.WriteLine($"Factor 2 is: {factor2}");
     Console.WriteLine($"Elapsed time: {timer.Elapsed.TotalMilliseconds}");
 }
-else
-    Console.WriteLine("Please enter an integer less than 15");
